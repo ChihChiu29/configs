@@ -1,0 +1,7 @@
+# Helps to start cronjobs.
+# 1. Create a single script to execute the command you want to execute.
+#   1a. Remember to use `date` and `>` to create logs for execution times and logs.
+# 2. Add the script here. The following example executes a script every 6 hours:
+#   0 */6 * * * export DISPLAY=:0 && /bin/bash /workspace/external/stockfun/scripts/download_ratings_cron.sh
+
+0 5,11,17,23 * * * export DISPLAY=:0 && /bin/bash /workspace/external/stockfun/scripts/download_ratings_cron.sh
